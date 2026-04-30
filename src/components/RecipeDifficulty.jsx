@@ -13,7 +13,7 @@ const RecipeDifficulty = ({ difficulty }) => {
                         className={cn(
                             "rounded-xl py-1 px-1",
                             difficulty === index
-                            ? difficulty === 2 && "bg-red-400 text-white"
+                            ? difficulty === 2 ? "bg-red-400 text-white" : "bg-amber-100 text-black"
                             : "bg-amber-100 text-black"
                         )}
                     >
