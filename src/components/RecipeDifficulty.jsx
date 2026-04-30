@@ -12,7 +12,9 @@ const RecipeDifficulty = ({ difficulty }) => {
                         key={label}
                         className={cn(
                             "rounded-xl py-1 px-1",
-                            difficulty === index ? "bg-red-400 text-white" : "bg-amber-100 text-black"
+                            difficulty === index
+                            ? difficulty === 2 && "bg-red-400 text-white"
+                            : "bg-amber-100 text-black"
                         )}
                     >
                         {label}
